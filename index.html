@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<meta http-equiv="Content-Type" charset=utf-8">
+		<meta name="description" content="RecipeCalculation">
+		<meta name="author" content="andrew.fivebro">
+    
+    	<title> Recipe Calculation </title>
+   		<link rel="stylesheet" href="radio.css">
+   		  <link rel="stylesheet" href="tables.css">
+   		    <link rel="stylesheet" href="buttons.css">
+   		      <link rel="stylesheet" href="style.css">
+ 	 	<script src = "jquery-3.3.1.js"> </script>
+ 	 	  <script src = "app.js"></script>
+    </head> 
+    
+   	<body> 
+		<div class="frame" name="input">
+			<p class='rule'> Введите исходное количество сырья: </p>
+		
+			<p class='tab-title'> Таблица 1. Мука и зернопродукты </p>
+			<table id="tab1"> 
+			</table>
+			<p class='alert'> Внимание! Количество муки меньше 100 кг. </p>
+			<p class='tab-title'> Таблица 2. Прочее сырье </p>
+			<table id="tab2"> 
+			</table>
+		</div>
+		<div class="frame" name="input">
+  				<p class='rule'> Дополнительные данные: </p>
+				<p>	Влажность теста: <input type="text" class="addData-input" id="duffWet" value="43" />%</p>
+				<p>	Количество муки на замес: <input type="text" class="addData-input" id="duffWeight" value="50" />кг.</p>
+				<p id="oparaWetVisibility"> Влажность опары: <input type="text" class="addData-input" id="oparaWet" value="70" />%</p>
+  				<p class='rule'> Выберите способ приготовления: </p>
+  				<p class="radio">
+   					<input type="radio" id="method1" name="radio-group" checked>
+    				<label for="method1">Безопарный</label>
+  				</p>
+  				<p class="radio">
+    				<input type="radio" id="method2" name="radio-group">
+    				<label for="method2">Опарный</label>
+  				</p>
+  				<p class="button-result animated" id="getResult"> <span> Произвести расчет </span> </p>
+		</div>
+		<div class="frame" name="output">
+			<p class='rule'> Результаты расчета: </p>
+			<p class='tab-title'> Таблица 3. Рабочая рецептура </p>
+			<table id="tab3"> 
+			</table>
+		</div>
+    </body> 
+</html>

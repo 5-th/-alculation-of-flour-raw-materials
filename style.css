@@ -1,0 +1,57 @@
+
+body {
+    font: 14px/1 Trebuchet MS, sans-serif;
+   }
+
+#container {
+	position:absolute;
+	margin-top:15%;
+	margin-left:36%;
+}
+
+.addData-input {
+    margin: 5px;
+    padding: 5px 0px 5px 0px;
+    outline: none;
+    width: 50px;
+    border: 1px solid #d9d9d9;
+    outline: none;
+    text-align: center;
+}
+
+#changeParamInput {
+    display: inline-block;
+    position: relative;
+    padding: 2px 0px 2px 0px;
+    outline: none;
+    width: 25px;
+    border: 0px solid #fff;
+    outline: none;
+    text-align: center;
+    font: 14px/0 Trebuchet MS, sans-serif;
+    background-color: #ff6600;
+    color:#fff;
+    vertical-align: middle;
+}
+
+.alert {
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    font: 11px/1 Trebuchet MS, sans-serif;
+    background-color: red;
+    color:#fff;
+}
+
+.rule {
+    background-color: #ff6600;
+    padding: 8px;
+    color:#fff;
+}
+
+.frame {
+    display: inline-block;
+    border: 0px solid #A9A9A9;
+    margin-top: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+}

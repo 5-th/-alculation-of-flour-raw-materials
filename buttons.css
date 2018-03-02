@@ -1,0 +1,62 @@
+.button-fix {
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    border: none;
+    text-align: center;
+    padding: 3px 0px 3px 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #436CCB;
+    font: 10px/1 Trebuchet MS, sans-serif;
+    vertical-align: middle;
+    color: #d7e0f4;
+}
+
+.button-fix:hover {
+    color: #fff;
+}
+
+.button-result {
+    width: 350px;
+    display: block;
+    border: none;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.animated {
+    background-color: #436CCB;
+    color: #d7e0f4;  
+}
+
+.animated span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.animated span:after {
+    content: '\00BB';
+    position: absolute;
+    opacity: 0;
+    top: -5px;
+    right: -10px;
+    transition: 0.5s;
+    font-size: 25px;
+    color: #d7e0f4;  
+}
+
+.animated:hover span {
+    padding-right: 15px;
+    color: #fff;  
+}
+
+.animated:hover span:after {
+    opacity: 1;
+    right: 0;
+    color: #fff;  
+ }
